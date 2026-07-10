@@ -19,7 +19,11 @@ under the hood.
       Known limitation of prompt-based citation; something to measure
       properly in Phase 6.
 - [ ] Phase 6: Evaluation
-- [ ] Phase 7: Better retrieval (stretch)
+- [x] Phase 7: Better retrieval (hybrid search)
+      Found and fixed a stopword-pollution bug in keyword scoring.
+      Learned: this particular test question was a poor discriminator
+      since the answer already lives in the Abstract - a better test
+      would target a fact ONLY present in a buried technical section.
 - [ ] Phase 8: Agent behavior (stretch)
 - [ ] Phase 9: UI (Streamlit)
 
