@@ -29,7 +29,7 @@ client = genai.Client()
 def ask_gemini(question: str) -> str:
     """Send a single question to Gemini and return the text reply."""
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.1-flash-lite",
         contents=question
     )
     return response.text

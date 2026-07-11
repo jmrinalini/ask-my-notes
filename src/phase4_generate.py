@@ -80,7 +80,7 @@ def ask_with_context(collection, user_input: str, mode: str = "qa", top_k: int =
     prompt = build_prompt(mode, user_input, matched_chunks)
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.1-flash-lite",
         contents=prompt
     )
 

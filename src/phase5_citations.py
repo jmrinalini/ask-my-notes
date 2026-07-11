@@ -71,7 +71,7 @@ def ask_with_citations(collection, question: str, top_k: int = 3):
     prompt = build_cited_prompt(question, matched_chunks)
 
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.1-flash-lite",
         contents=prompt
     )
 
